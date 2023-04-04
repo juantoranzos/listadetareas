@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Lista De Tareas</title>
+     <title>Lista De Tareas</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Lista de tareas</h1>
-        <div class="form-group">
-            <label for="nuevaTarea">Nueva tarea:</label>
-            <input type="text" class="form-control" id="nuevaTarea">
-        </div>
-        <button class="btn btn-primary" onclick="añadirLista()">Agregar tarea</button>
-        <ul class="list-group" id="listaDeTareas"></ul>
-
+    <main>
+        <div class="container text-center" id="contenedor">
+            <h1 class="pt-5">Lista de tareas</h1>
+            <div class="form-group p-3">
+                <label for="nuevaTarea" class="">Nueva tarea:</label>
+                <input type="text" class="form-control p-3" id="nuevaTarea" required>
+            </div>
+            <button class="btn btn-primary" onclick="añadirLista()">Agregar tarea</button>
+            <ul class="list-group" id="listaDeTareas"></ul>
+    
+    </main>
+  
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
